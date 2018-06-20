@@ -20,6 +20,9 @@ class ImagesThumbnail extends PureComponent {
 
   render() {
     const { images } = this.props;
+
+    if(images.length === 0) return <div><h2>No Images to Show</h2></div>;
+
     return (
       <div>
         <ul className = "thumbnail-list">
