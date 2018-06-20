@@ -18,7 +18,6 @@ export default class App extends PureComponent {
             <ul>
               <li><Link to= "/">Albums</Link></li>
               <li><Link to="/albums/new">Add Albums</Link></li>
-              <li><a>Images</a></li>
               <li><Link to="/about">About</Link></li>
             </ul>
           </nav>
