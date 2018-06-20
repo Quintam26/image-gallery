@@ -33,7 +33,7 @@ class Gallery extends PureComponent {
     const { images } = this.props;
     const { imageSpot } = this.state;
 
-    if(!images) return null;
+    if(images.length === 0) return <div><h2>No Images to Show</h2></div>;
 
     return (
       <div>
