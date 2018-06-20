@@ -8,7 +8,6 @@ import ImagesList from './ImagesList';
 import Gallery from './Gallery';
 import { getUrl } from '../../services/images';
 
-
 export default class AlbumDetail extends PureComponent {
 
   static propTypes = {

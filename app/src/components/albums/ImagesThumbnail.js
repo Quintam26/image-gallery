@@ -6,6 +6,7 @@ import { loadImages } from './actions';
 import { getUrl } from '../../services/images';
 import './ImagesThumbnail.css';
 
+
 class ImagesThumbnail extends PureComponent {
 
   static propTypes = {
@@ -26,6 +27,7 @@ class ImagesThumbnail extends PureComponent {
     return (
       <div>
         <ul className = "thumbnail-list">
+         
           {images.map(image => <li key={image._id}>
             <img src={getUrl(image.url)}/>
             <div id ="title">{image.title}</div>
