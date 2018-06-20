@@ -26,7 +26,8 @@ export default class App extends PureComponent {
               <Route exact path="/" component={Albums}/>
               <Route path="/about" component={About}/>
               <Route exact path="/albums" component={Albums}/>
-              <Route path="/albums/new" component={NewAlbum}/>
+              <Route path="/albums/new" render={({ history }) => {
+                return <NewAlbum history={history}/>;}}/>
               <Route path="/albums/:id" render={({ match }) => {
                 return <AlbumDetail albumId={match.params.id} match={match}/>;
               }}/>

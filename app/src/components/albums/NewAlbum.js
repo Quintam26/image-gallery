@@ -14,7 +14,8 @@ const defaultState = {
 export class NewAlbum extends PureComponent {
 
   static propTypes = {
-    addAlbum: PropTypes.func.isRequired
+    addAlbum: PropTypes.func.isRequired,
+    history: PropTypes.object
   };
 
   state= {
@@ -38,6 +39,8 @@ export class NewAlbum extends PureComponent {
     this.setState({
       edit: { ...defaultState }
     });
+    this.props.history.push('/albums');
+
   };
 
   render() {
